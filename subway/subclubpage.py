@@ -45,11 +45,3 @@ class SubwayClubCardAPI:
 		opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
 		response = opener.open(login_url, urlencode(params))
 		return response.read()
-
-
-
-if __name__=="__main__":
-	card_id = "123" # your id
-	pin_id = "456"  # your id
-	api = SubwayClubCardAPI()
-	print api.get_balance(card_id, pin_id).encode("cp932")
