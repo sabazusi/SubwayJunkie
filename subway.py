@@ -49,7 +49,7 @@ class SubwayClubCardAPI:
 
 
 if __name__=="__main__":
-	card_id = "123"
-	pin_id = "456"
+	card_id = "123" # your id
+	pin_id = "456"  # your id
 	api = SubwayClubCardAPI()
 	print api.get_balance(card_id, pin_id).encode("cp932")
